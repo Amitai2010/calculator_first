@@ -59,7 +59,7 @@ buttons.forEach((btn) => {
         
         if (btn.textContent === "=") {
             num2 = Number(afterOp);
-            result = operate(num1, num2, operator);
+            result = Math.floor(operate(num1, num2, operator));
             screen.textContent = result;
             num1 = result;
             num2 = null;
